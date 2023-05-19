@@ -1,0 +1,121 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "province": {
+      "type": "string"
+    },
+    "canton": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "typofproperty": {
+      "type": "string"
+    },
+    "amenities": {
+      "type": "json"
+    },
+    "buildArea": {
+      "type": "decimal"
+    },
+    "rooms": {
+      "type": "integer"
+    },
+    "baths": {
+      "type": "integer"
+    },
+    "gardenoryard": {
+      "type": "json"
+    },
+    "terrainArea": {
+      "type": "decimal"
+    },
+    "law7600": {
+      "type": "boolean"
+    },
+    "internalDetails": {
+      "type": "json"
+    },
+    "externalDetails": {
+      "type": "json"
+    },
+    "furnished": {
+      "type": "string"
+    },
+    "kidFriendly": {
+      "type": "string"
+    },
+    "petFriendly": {
+      "type": "string"
+    },
+    "maintainCuote": {
+      "type": "decimal"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "properties"
+    },
+    "areaBodega": {
+      "type": "decimal"
+    },
+    "altura": {
+      "type": "decimal"
+    },
+    "electricConncetion": {
+      "type": "string"
+    },
+    "loadArea": {
+      "type": "boolean"
+    },
+    "areaByFloors": {
+      "type": "decimal"
+    },
+    "numberOfFloors": {
+      "type": "integer"
+    },
+    "groundPourpose": {
+      "type": "string"
+    },
+    "castralLocation": {
+      "type": "string"
+    },
+    "demographLocation": {
+      "type": "string"
+    },
+    "geoLocation": {
+      "type": "string"
+    },
+    "mezanineArea": {
+      "type": "decimal"
+    },
+    "basementsArea": {
+      "type": "decimal"
+    },
+    "densityType": {
+      "type": "string"
+    },
+    "services": {
+      "type": "string"
+    },
+    "medicalService": {
+      "type": "boolean"
+    }
+  }
+}
