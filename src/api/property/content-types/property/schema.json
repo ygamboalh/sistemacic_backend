@@ -12,65 +12,53 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "province": {
+    "provincia": {
       "type": "string"
     },
     "canton": {
       "type": "string"
     },
-    "district": {
+    "distrito": {
       "type": "string"
     },
-    "price": {
+    "precio": {
       "type": "integer"
     },
-    "typofproperty": {
+    "tipoPropiedad": {
       "type": "string"
     },
-    "amenities": {
+    "amenidades": {
       "type": "json"
     },
-    "buildArea": {
+    "habitaciones": {
+      "type": "integer"
+    },
+    "banos": {
       "type": "decimal"
     },
-    "rooms": {
-      "type": "integer"
-    },
-    "baths": {
-      "type": "integer"
-    },
-    "gardenoryard": {
+    "jardinPatio": {
       "type": "json"
     },
-    "terrainArea": {
-      "type": "decimal"
-    },
-    "law7600": {
+    "ley7600": {
       "type": "boolean"
     },
-    "internalDetails": {
+    "detallesInternos": {
       "type": "json"
     },
-    "externalDetails": {
+    "detallesExternos": {
       "type": "json"
     },
-    "furnished": {
+    "amueblado": {
       "type": "string"
     },
-    "kidFriendly": {
+    "aptoHijos": {
       "type": "string"
     },
-    "petFriendly": {
+    "aptoMascotas": {
       "type": "string"
     },
-    "maintainCuote": {
+    "cuotaMantenimiento": {
       "type": "decimal"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "properties"
     },
     "areaBodega": {
       "type": "decimal"
@@ -78,44 +66,110 @@
     "altura": {
       "type": "decimal"
     },
-    "electricConncetion": {
+    "concepcionElectrica": {
       "type": "string"
     },
-    "loadArea": {
+    "areaCarga": {
       "type": "boolean"
     },
-    "areaByFloors": {
+    "areaPlantas": {
       "type": "decimal"
     },
-    "numberOfFloors": {
+    "numeroPlantas": {
       "type": "integer"
     },
-    "groundPourpose": {
+    "propositoTerreno": {
       "type": "string"
     },
-    "castralLocation": {
+    "ubicacionCastral": {
       "type": "string"
     },
-    "demographLocation": {
+    "ubicacionDemografica": {
       "type": "string"
     },
-    "geoLocation": {
+    "ubicacionGeografica": {
       "type": "string"
     },
-    "mezanineArea": {
+    "areaMesanini": {
       "type": "decimal"
     },
-    "basementsArea": {
+    "areaSotano": {
       "type": "decimal"
     },
-    "densityType": {
+    "tipoDensidad": {
       "type": "string"
     },
-    "services": {
+    "servicios": {
       "type": "string"
     },
-    "medicalService": {
+    "serviciosMedicos": {
       "type": "boolean"
+    },
+    "Anunciante": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "properties"
+    },
+    "active": {
+      "type": "string"
+    },
+    "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "areaTerreno": {
+      "type": "decimal"
+    },
+    "areaContruccion": {
+      "type": "decimal"
+    },
+    "cochera": {
+      "type": "string"
+    },
+    "usoDeSuelo": {
+      "type": "string"
+    },
+    "tipoEdificio": {
+      "type": "string"
+    },
+    "areaPropiedad": {
+      "type": "decimal"
+    },
+    "areaPiso": {
+      "type": "decimal"
+    },
+    "tipoBodega": {
+      "type": "string"
+    },
+    "tipoOficina": {
+      "type": "string"
+    },
+    "parqueo": {
+      "type": "string"
+    },
+    "tipoLote": {
+      "type": "string"
+    },
+    "tipoLocal": {
+      "type": "string"
+    },
+    "creadoPor": {
+      "type": "integer"
+    },
+    "uniqueId": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 1,
+      "maxLength": 20
     }
   }
 }

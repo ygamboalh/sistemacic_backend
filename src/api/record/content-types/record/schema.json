@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "records",
+  "info": {
+    "singularName": "record",
+    "pluralName": "records",
+    "displayName": "Record",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "minLength": 6
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": false,
+      "minLength": 6,
+      "maxLength": 50
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 15,
+      "minLength": 10
+    },
+    "managment": {
+      "type": "string",
+      "required": true,
+      "minLength": 6
+    }
+  }
+}
